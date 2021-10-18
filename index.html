@@ -867,43 +867,40 @@
                     <div class="contact-wrapper form-style-two pt-115">
                         <h4 class="contact-title pb-10"><i class="lni lni-envelope"></i> Leave <span>A Message.</span></h4>
                         
-                        <form id="contact-form" action="https://formspree.io/f/xdoyvejp" method="post">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="form-input mt-25">
-                                        <label>Name</label>
-                                        <div class="input-items default">
-                                            <input name="name" type="text" placeholder="Name">
-                                            <i class="lni lni-user"></i>
-                                        </div>
-                                    </div> <!-- form input -->
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-input mt-25">
-                                        <label>Email</label>
-                                        <div class="input-items default">
-                                            <input type="email" name="email" placeholder="Email">
-                                            <i class="lni lni-envelope"></i>
-                                        </div>
-                                    </div> <!-- form input -->
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="form-input mt-25">
-                                        <label>Massage</label>
-                                        <div class="input-items default">
-                                            <textarea name="massage" placeholder="Massage"></textarea>
-                                            <i class="lni lni-pencil-alt"></i>
-                                        </div>
-                                    </div> <!-- form input -->
-                                </div>
-                                <p class="form-message"></p>
-                                <div class="col-md-12">
-                                    <div class="form-input light-rounded-buttons mt-30">
-                                        <button class="main-btn light-rounded-two">Send Message</button>
-                                    </div> <!-- form input -->
-                                </div>
-                            </div> <!-- row -->
-                        </form>
+                        <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+<script>
+  /* paste this line in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
+  /* customize formbutton below*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/xdoyvejp",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      title: {
+        backgroundColor: "gray"
+      },
+      button: {
+        backgroundColor: "gray"
+      }
+    }
+  });
+</script>
                     </div> <!-- contact wrapper form -->
                 </div>
             </div> <!-- row -->
