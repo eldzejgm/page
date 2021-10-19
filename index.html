@@ -31,6 +31,11 @@
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
     
+    <!--===== Contact ======-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/formiojs@latest/dist/formio.full.min.css">
+<script src="https://unpkg.com/formiojs@latest/dist/formio.full.min.js"></script>
+    
 </head>
 
 <body>
@@ -900,6 +905,18 @@
       }
     }
   });
+</script>
+                        
+                        <div id="formio"></div>
+                        
+                        <script type="text/javascript">
+  window.onload = function() {
+    Formio.createForm(document.getElementById('formio'), 'https://dkcpmjwgyhvfvag.form.io/contact');
+  };
+</script>
+  window.onload = function() {
+    Formio.createForm(document.getElementById('formio'), 'https://dkcpmjwgyhvfvag.form.io/');
+  };
 </script>
                     </div> <!-- contact wrapper form -->
                 </div>
