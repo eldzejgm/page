@@ -80,13 +80,13 @@
                         </a>
                         
                        <!-- GTranslate: https://gtranslate.io/ -->
-<a href="#" onclick="doGTranslate('pl|en');return false;" title="English" class="gflag nturl" style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="32" width="32" alt="English" /></a><a href="#" onclick="doGTranslate('pl|pl');return false;" title="Polish" class="gflag nturl" style="background-position:-200px -200px;"><img src="//gtranslate.net/flags/blank.png" height="32" width="32" alt="Polish" /></a>
+<a href="#" onclick="doGTranslate('pl|en');return false;" title="English" class="gflag nturl" style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="24" width="24" alt="English" /></a><a href="#" onclick="doGTranslate('pl|pl');return false;" title="Polish" class="gflag nturl" style="background-position:-200px -200px;"><img src="//gtranslate.net/flags/blank.png" height="24" width="24" alt="Polish" /></a>
 
 <style type="text/css">
 <!--
-a.gflag {vertical-align:middle;font-size:32px;padding:1px 0;background-repeat:no-repeat;background-image:url(//gtranslate.net/flags/32.png);}
+a.gflag {vertical-align:middle;font-size:24px;padding:1px 0;background-repeat:no-repeat;background-image:url(//gtranslate.net/flags/24.png);}
 a.gflag img {border:0;}
-a.gflag:hover {background-image:url(//gtranslate.net/flags/32a.png);}
+a.gflag:hover {background-image:url(//gtranslate.net/flags/24a.png);}
 -->
 </style>
 
@@ -97,6 +97,7 @@ a.gflag:hover {background-image:url(//gtranslate.net/flags/32a.png);}
 function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='pl';if(lang == 'pl')location.href=location.protocol+'//'+location.host+location.pathname.replace('/'+plang+'/', '/')+location.search;else location.href=location.protocol+'//'+location.host+'/'+lang+location.pathname.replace('/'+plang+'/', '/')+location.search;}
 /* ]]> */
 </script>
+
 
                         
  
