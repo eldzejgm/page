@@ -79,8 +79,8 @@
                             <img src="assets/images/logo.svg" alt="Logo">
                         </a>
                         
-                        <!-- GTranslate: https://gtranslate.io/ -->
-<a href="#" onclick="doGTranslate('pl|en');return false;" title="English" class="gflag nturl" style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="32" width="32" alt="English" /></a><a href="#" onclick="doGTranslate('pl|de');return false;" title="German" class="gflag nturl" style="background-position:-300px -100px;"><img src="//gtranslate.net/flags/blank.png" height="32" width="32" alt="German" /></a><a href="#" onclick="doGTranslate('pl|pl');return false;" title="Polish" class="gflag nturl" style="background-position:-200px -200px;"><img src="//gtranslate.net/flags/blank.png" height="32" width="32" alt="Polish" /></a>
+                       <!-- GTranslate: https://gtranslate.io/ -->
+<a href="#" onclick="doGTranslate('pl|en');return false;" title="English" class="gflag nturl" style="background-position:-0px -0px;"><img src="//gtranslate.net/flags/blank.png" height="32" width="32" alt="English" /></a><a href="#" onclick="doGTranslate('pl|pl');return false;" title="Polish" class="gflag nturl" style="background-position:-200px -200px;"><img src="//gtranslate.net/flags/blank.png" height="32" width="32" alt="Polish" /></a>
 
 <style type="text/css">
 <!--
@@ -97,6 +97,7 @@ a.gflag:hover {background-image:url(//gtranslate.net/flags/32a.png);}
 function doGTranslate(lang_pair) {if(lang_pair.value)lang_pair=lang_pair.value;if(lang_pair=='')return;var lang=lang_pair.split('|')[1];var plang=location.pathname.split('/')[1];if(plang.length !=2 && plang.toLowerCase() != 'zh-cn' && plang.toLowerCase() != 'zh-tw')plang='pl';if(lang == 'pl')location.href=location.protocol+'//'+location.host+location.pathname.replace('/'+plang+'/', '/')+location.search;else location.href=location.protocol+'//'+location.host+'/'+lang+location.pathname.replace('/'+plang+'/', '/')+location.search;}
 /* ]]> */
 </script>
+
                         
  
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTwo" aria-controls="navbarTwo" aria-expanded="false" aria-label="Toggle navigation">
