@@ -7,6 +7,20 @@
       "version" : "2021-11-29-18-01-33",
       "location" : "1.8.json",
       "priority" : 0
+    },
+    {
+      "title" : "Light Modpack",
+      "name" : "Light Modpack",
+      "version" : "2021-11-29-18-24-58",
+      "location" : "light-modpack.json",
+      "priority" : 0
+    },
+    {
+      "title" : "Monster Modpack",
+      "name" : "Monster Modpack",
+      "version" : "2021-11-29-18-24-49",
+      "location" : "monster-modpack.json",
+      "priority" : 0
     }
   ]
 }
